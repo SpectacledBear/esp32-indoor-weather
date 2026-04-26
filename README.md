@@ -12,13 +12,14 @@
 I used the [CircuitPython made for the Adafruit Feather ESP32 V2](https://circuitpython.org/board/adafruit_feather_esp32_v2/).
 Specifically [this one](https://downloads.circuitpython.org/bin/adafruit_feather_esp32_v2/en_US/adafruit-circuitpython-adafruit_feather_esp32_v2-en_US-10.0.3.bin). I've included this binary file in the repo, for archival purposes.
 
-**Adafruit BME280 CircuitPython library.**
-The [BME280 library](https://github.com/adafruit/Adafruit_CircuitPython_BME280) and the [BusDevice library](https://github.com/adafruit/Adafruit_CircuitPython_BusDevice) are used.
-Alternatively you could use the comprehensive [CircuitPython driver bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle).
-The required libraries are included in the `lib/` directory.
+**Adafruit SHT45 CirtcuitPython library.**
+The [SHT45 library](https://github.com/adafruit/Adafruit_CircuitPython_SHT4x) and the [BusDevice library](https://github.com/adafruit/Adafruit_CircuitPython_BusDevice) are used.
 
 **Adafruit DisplayIO SH1107 CircuitPython library.**
 The [SH1107 library](https://github.com/adafruit/Adafruit_CircuitPython_DisplayIO_SH1107) is used to drive the OLED FeatherWing and the [display_text library](https://github.com/adafruit/Adafruit_CircuitPython_Display_Text) is a helper library for displaying text using CircuitPython's displayio library.
+
+**Alternative: Adafruit CircuitPython library bundle.**
+Alternatively you can find all the sensor and display libraries and their dependencies in the comprehensive [CircuitPython driver bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle).
 
 ## Setup
 
