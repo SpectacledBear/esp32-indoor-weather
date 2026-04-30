@@ -12,6 +12,9 @@
 I used the [CircuitPython made for the Adafruit Feather ESP32 V2](https://circuitpython.org/board/adafruit_feather_esp32_v2/).
 Specifically [this one](https://downloads.circuitpython.org/bin/adafruit_feather_esp32_v2/en_US/adafruit-circuitpython-adafruit_feather_esp32_v2-en_US-10.0.3.bin). I've included this binary file in the repo, for archival purposes.
 
+**Adafruit BH1750 CircuitPython library.**
+The [BH1750 library](https://github.com/adafruit/Adafruit_CircuitPython_BH1750), the [BusDevice library](https://github.com/adafruit/Adafruit_CircuitPython_BusDevice) and the [Registery library](https://github.com/adafruit/Adafruit_CircuitPython_Register) are used.
+
 **Adafruit SHT45 CirtcuitPython library.**
 The [SHT45 library](https://github.com/adafruit/Adafruit_CircuitPython_SHT4x) and the [BusDevice library](https://github.com/adafruit/Adafruit_CircuitPython_BusDevice) are used.
 
