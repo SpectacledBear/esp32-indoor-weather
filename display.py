@@ -4,6 +4,8 @@ import terminalio
 from adafruit_display_text import label
 from i2cdisplaybus import I2CDisplayBus
 
+from buttons import Buttons
+
 # SH1107 is vertically oriented 64x128
 WIDTH = 128
 HEIGHT = 64
@@ -39,6 +41,10 @@ class Display:
         )
         self.splash.append(self.text_area3)
 
+        self.buttons = Buttons()
+
+        self.display_hidden = False
+
     def set_temperature(self, temperature):
         self.text_area.text = "T:  %0.1f C" % temperature
 
@@ -47,3 +53,9 @@ class Display:
 
     def set_lux(self, lux):
         self.text_area3.text = "L:  %0.2f lux" % lux
+
+    def update(self):
+        self.buttons.update()
+
+        if self.buttons.button_a_pressed():
+            self.splash.hidden = not self.splash.hidden

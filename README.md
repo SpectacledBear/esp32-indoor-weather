@@ -20,6 +20,7 @@ The [SHT45 library](https://github.com/adafruit/Adafruit_CircuitPython_SHT4x) an
 
 **Adafruit DisplayIO SH1107 CircuitPython library.**
 The [SH1107 library](https://github.com/adafruit/Adafruit_CircuitPython_DisplayIO_SH1107) is used to drive the OLED FeatherWing and the [display_text library](https://github.com/adafruit/Adafruit_CircuitPython_Display_Text) is a helper library for displaying text using CircuitPython's displayio library.
+Interactivity with the buttons on this display are supported through the [Debouncer library](https://github.com/adafruit/Adafruit_CircuitPython_Debouncer) and its [Ticks library](https://github.com/adafruit/Adafruit_CircuitPython_Ticks) dependency.
 
 **Alternative: Adafruit CircuitPython library bundle.**
 Alternatively you can find all the sensor and display libraries and their dependencies in the comprehensive [CircuitPython driver bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle).

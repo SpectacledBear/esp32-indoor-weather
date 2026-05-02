@@ -10,6 +10,7 @@ MEASUREMENT_INTERVAL_SECONDS = 60
 
 # TODO: Handle i2C sensors not being present, and display an error message on the display instead of crashing.
 i2c = board.STEMMA_I2C()
+sht = adafruit_sht4x.SHT4x(i2c)
 
 display = Display(i2c)
 
