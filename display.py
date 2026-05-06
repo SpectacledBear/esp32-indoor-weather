@@ -25,17 +25,17 @@ class Display:
         self.splash = displayio.Group()
         self.display.root_group = self.splash
 
-        text1 = "T:  0.0 C"  # overly long to see where it clips
+        text1 = "T:  0 C"  # overly long to see where it clips
         self.text_area = label.Label(
             terminalio.FONT, text=text1, color=0xFFFFFF, x=8, y=8
         )
         self.splash.append(self.text_area)
-        text2 = "RH: 0.00 %%"
+        text2 = "RH: 0 %"
         self.text_area2 = label.Label(
             terminalio.FONT, text=text2, color=0xFFFFFF, x=8, y=20
         )
         self.splash.append(self.text_area2)
-        text3 = "L:  0.00 lux"
+        text3 = "L:  0 lux"
         self.text_area3 = label.Label(
             terminalio.FONT, text=text3, color=0xFFFFFF, x=8, y=32
         )
@@ -46,13 +46,13 @@ class Display:
         self.display_hidden = False
 
     def set_temperature(self, temperature):
-        self.text_area.text = "T:  %0.1f C" % temperature
+        self.text_area.text = f"T:  {round(temperature)} C"
 
     def set_relative_humidity(self, relative_humidity):
-        self.text_area2.text = "RH: %0.2f %%" % relative_humidity
+        self.text_area2.text = f"RH: {round(relative_humidity)} %"
 
     def set_lux(self, lux):
-        self.text_area3.text = "L:  %0.2f lux" % lux
+        self.text_area3.text = f"L:  {round(lux)} lux"
 
     def update(self):
         self.buttons.update()
