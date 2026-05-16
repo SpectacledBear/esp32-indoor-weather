@@ -30,9 +30,8 @@ while True:
         temperature = round(temperature)
         relative_humidity = round(relative_humidity)
         lux = round(bh1750.lux)
-        print(f"{temperature:>3} C  {relative_humidity:>3} % RH  {lux:>4} lux")
+        print(f"|  {temperature:>3} C |  {relative_humidity:>3} % RH | {lux:>4} lux |")
 
         display.set_temperature(temperature)
         display.set_relative_humidity(relative_humidity)
         display.set_lux(lux)
-
