@@ -33,3 +33,8 @@ I used ESP-IDF and its esptool.py to flash CircuitPython onto the device.
     esptool.py --port <COM_PORT> write_flash -z 0x0 adafruit-circuitpython-adafruit_feather_esp32_v2-en_US-10.0.3.bin
 
 Then copied the contents of the `lib/` directory to the root directory of the ESP32 device using the Thonny program.
+
+## Usage
+
+- At boot it will display the sensor measurements and update them every minute.
+- Pressing the A button on the OLED display turns the device on and off.
